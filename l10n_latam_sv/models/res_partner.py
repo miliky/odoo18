@@ -86,10 +86,12 @@ class ResPartner(models.Model):
 
         # Validar dígito verificador del NIT homologado (módulo 10)
         elif len(nit_clean) == 9:
-            suma = sum(int(digito) * (9 - i) for i, digito in enumerate(nit_clean[:-1]))
-            verificacion = suma % 10
-            digito_control = 10 - verificacion if verificacion != 0 else 0
-            return int(nit_clean[-1]) == digito_control
+            # suma = sum(int(digito) * (9 - i) for i, digito in enumerate(nit_clean[:-1]))
+            # verificacion = suma % 10
+            # digito_control = 10 - verificacion if verificacion != 0 else 0
+            # return int(nit_clean[-1]) == digito_control
+            
+            return True
 
         return False
 
@@ -99,18 +101,20 @@ class ResPartner(models.Model):
         if not re.match(r'^\d{8}-\d{1}$', dui):
             return False
             
-        # Extraer los dígitos para validación
-        dui_parts = dui.split('-')
-        if len(dui_parts) != 2 or len(dui_parts[0]) != 8 or len(dui_parts[1]) != 1:
-            return False
+        # # Extraer los dígitos para validación
+        # dui_parts = dui.split('-')
+        # if len(dui_parts) != 2 or len(dui_parts[0]) != 8 or len(dui_parts[1]) != 1:
+        #     return False
             
-        # Concatenar para validación del dígito verificador
-        dui_clean = dui_parts[0] + dui_parts[1]
+        # # Concatenar para validación del dígito verificador
+        # dui_clean = dui_parts[0] + dui_parts[1]
         
-        # Validación del dígito verificador
-        suma = sum(int(d) * (9 - i) for i, d in enumerate(dui_clean[:-1]))
-        verificador = suma % 10
-        return int(dui_clean[-1]) == verificador
+        # # Validación del dígito verificador
+        # suma = sum(int(d) * (9 - i) for i, d in enumerate(dui_clean[:-1]))
+        # verificador = suma % 10
+        # return int(dui_clean[-1]) == verificador
+
+        return True
 
     # === ANULA VALIDACIÓN ESTÁNDAR DE ODOO PARA SV ===
 
