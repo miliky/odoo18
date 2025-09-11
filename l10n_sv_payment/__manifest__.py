@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'El Salvador - Payment Terms DGII',
-    'version': '18.0.1.0.2',
+    'version': '18.0.1.0.5',
     'summary': 'Extensión de Términos de Pago para El Salvador',
     'description': """
 Este módulo extiende el modelo account.payment.term añadiendo el campo plazo
@@ -19,6 +19,7 @@ Implementa el catálogo CAT_018_Plazo con opciones: Días, Meses, Años.
     'depends': ['account'],
     'data': [
         'views/account_payment_term_views.xml',
+        'views/account_payment_method_line_views.xml',
         'data/payment_term_data.xml',
     ],
     'installable': True,

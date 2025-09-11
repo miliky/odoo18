@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <!-- Vista de formulario para account.payment.method.line -->
-    <record id="view_account_payment_method_line_form_sv" model="ir.ui.view">
-        <field name="name">account.payment.method.line.form.sv</field>
-        <field name="model">account.payment.method.line</field>
-        <field name="inherit_id" ref="account.view_account_payment_method_line_form"/>
+    <record id="view_account_journal_form_inherit_sv" model="ir.ui.view">
+        <field name="name">account.journal.form.inherit.sv</field>
+        <field name="model">account.journal</field>
+        <field name="inherit_id" ref="account.view_account_journal_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='payment_account_id']" position="after">
+            <xpath expr="//field[@name='inbound_payment_method_line_ids']/list/field[@name='payment_account_id']" position="before">
+                <field name="formasDePagos"/>
+            </xpath>
+            <xpath expr="//field[@name='outbound_payment_method_line_ids']/list/field[@name='payment_account_id']" position="before">
                 <field name="formasDePagos"/>
             </xpath>
         </field>
