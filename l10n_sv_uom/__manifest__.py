@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'El Salvador - Units of measurement',
+    'name': 'El Salvador - Units of measurement DGII',
     'version': '18.0.1.0.2',
     'summary': 'Extensión de Unidades de Medida para El Salvador',
     'description': """
