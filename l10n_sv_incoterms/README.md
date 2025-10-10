@@ -29,9 +29,10 @@ El módulo actualiza los Incoterms estándar con los códigos DGII correspondien
 Este módulo está licenciado bajo LGPL-3.
 
 ## Soporte
-Para soporte técnico, contactar al autor o visitar el repositorio en GitHub: https://github.com/miliky/odoo18
+Para soporte técnico, contactar al autor o visitar el repositorio en GitHub: https://github.com/miliky
 
 ## Autor
 - Nombre : José Emilio Flores Meléndez
 - Email : jefm@outlook.com
-- GitHub : https://github.com/miliky/odoo18
+- GitHub : https://github.com/miliky
+- Web : https://smart.dte.company/

@@ -9,7 +9,7 @@ para la identificación según normativa de El Salvador (CAT_014_Unidad_de_Medid
 """,
     'author': 'miliky',
     'maintainer': 'José Emilio Flores Meléndez',
-    'website': 'https://github.com/miliky/odoo18',
+    'website': 'https://smart.dte.company/',
     'category': 'Inventory/Localizations',
     'license': 'LGPL-3',
     'images': ['static/description/banner.jpg'],

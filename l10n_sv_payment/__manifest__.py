@@ -10,7 +10,7 @@ Implementa el catálogo CAT_018_Plazo con opciones: Días, Meses, Años.
 """,
     'author': 'miliky',
     'maintainer': 'José Emilio Flores Meléndez',
-    'website': 'https://github.com/miliky/odoo18',
+    'website': 'https://smart.dte.company/',
     'category': 'Accounting/Localizations',
     'license': 'LGPL-3',
     'images': ['static/description/banner.jpg'],
