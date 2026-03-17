@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'El Salvador - Units of measurement DGII',
-    'version': '18.0.1.0.2',
+    'version': '18.0.1.0.6',
     'summary': 'Extensión de Unidades de Medida para El Salvador',
     'description': """
 Este módulo extiende el modelo uom.uom añadiendo el campo code
